@@ -12,7 +12,7 @@ export const ServiceCard = ({
   description,
 }: ServiceCardProps) => {
   return (
-    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+    <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
       <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
         <Icon size={24} className="dark:text-blue-300" />
       </div>
