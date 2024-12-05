@@ -109,7 +109,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="md:w-2/3 flex flex-col gap-4">
                 <div className="text-gray-600 dark:text-gray-400 text-sm">
-                  代表社員 兼 CEO
+                  代表社員
                 </div>
                 <h3 className="text-xl font-bold mb-4 dark:text-white">
                   松尾 弥玖人
