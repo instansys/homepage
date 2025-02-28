@@ -71,6 +71,15 @@ export const Header = () => {
             <li>
               <button
                 type="button"
+                onClick={() => handleNavClick("#products")}
+                className="hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+              >
+                自社サービス
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
                 onClick={() => handleNavClick("#contact")}
                 className="hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >

@@ -35,14 +35,38 @@ export default function Home() {
             />
           </div>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6 md:mb-8 font-bold px-4">
-            すべての人がシステムで世の中を改善出来る未来へ
+            すべての人が瞬時にアイデアを具現化できる未来へ
           </p>
+
           <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-8 leading-7 md:leading-8 px-4">
             アイデアと目的があれば、専門知識がなくてもシステムが作れる。
             <br />
             生成AI技術の進化により、そんな未来が目前に迫っています。
             <br />
             私たちは、その未来を創るために、開発し続けます。
+          </p>
+          <div className="flex flex-col items-center mb-8 text-5xl relative -left-5 gap-2">
+            <div className="text-blue-500 dark:text-blue-700 font-bold relative left-0">
+              Instantiate
+            </div>
+            <div className="text-green-500 dark:text-green-700 font-bold relative left-5">
+              System
+            </div>
+            <div className="text-purple-500 dark:text-purple-700 font-bold relative left-20">
+              Instantly
+            </div>
+          </div>
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6 md:mb-8 font-bold px-4">
+            余計な時間・コストをかけずにシステム開発いたします
+          </p>
+          <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 mb-8 leading-7 md:leading-8 px-4">
+            AI技術を使いこなす少数精鋭のメンバーによって、
+            <br />
+            余計な時間・コストをかけずに最適なプランでシステムを開発いたします
+            <br />
+            <span className="font-bold">
+              ぜひ、お気軽にお問い合わせください。
+            </span>
           </p>
           <div className="flex justify-center">
             <a
@@ -162,6 +186,44 @@ export default function Home() {
             title="CV・ナレーション"
             description="代表者 松尾 弥玖人がナレーションやCVを担当いたします。"
           />
+        </div>
+      </Section>
+
+      {/* 自社サービス */}
+      <Section id="products">
+        <SectionTitle>自社サービス</SectionTitle>
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="p-6">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-3">
+                社内アシスタントbot開発（開発中）
+              </h3>
+              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                最新のAI技術を活用した社内アシスタントbotを開発中です。特定の業界や業務に特化したAIソリューションを提供し、お客様のビジネスに新たな価値を創出します。
+              </p>
+              <div className="text-sm text-gray-500 dark:text-gray-400">
+                2025年内リリース予定
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="p-6">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-3">
+                スマートフォン向けゲーム開発（開発中）
+              </h3>
+              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                スマートフォン向けゲームを企画・開発しています。ユニークな世界観と革新的なゲームプレイを組み合わせた、病みつきになるようなゲームを目指しています。
+              </p>
+              <div className="text-sm text-gray-500 dark:text-gray-400">
+                詳細は近日公開予定
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-sm md:text-base text-gray-600 dark:text-gray-400 mb-4">
+            自社サービスに関する詳細は随時更新いたします。最新情報をお楽しみに。
+          </p>
         </div>
       </Section>
 
