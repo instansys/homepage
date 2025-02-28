@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+import LightLogo from "@/public/logo-light.svg";
+import DarkLogo from "@/public/logo-dark.svg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +20,12 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 py-2">
       <div className="container mx-auto px-6 py-6 flex justify-between items-center">
-        <div className="text-2xl font-bold dark:text-white">Instansys</div>
+        <div className="dark:hidden">
+          <Image src={LightLogo} alt="Instansys" height={50} />
+        </div>
+        <div className="hidden dark:block">
+          <Image src={DarkLogo} alt="Instansys" height={50} />
+        </div>
 
         {/* ハンバーガーメニューボタン（モバイル用） */}
         <button
