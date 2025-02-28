@@ -15,7 +15,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "合同会社Instansys",
-  description: "すべての人がシステムで世の中を改善出来る未来へ",
+  description:
+    "合同会社Instansysは、「すべての人が瞬時にアイデアを具現化できる未来へ」をミッションとして掲げ、システム開発を担当する傍ら、AIの応用を研究しています",
 };
 
 export default function RootLayout({
