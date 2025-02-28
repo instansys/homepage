@@ -130,7 +130,10 @@ export default function Home() {
         <SectionTitle>代表者略歴</SectionTitle>
         <div className="max-w-5xl mx-auto px-4">
           <div className="space-y-8">
-            <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div
+              className="flex flex-col md:flex-row
+             gap-8 items-start"
+            >
               <div className="md:w-2/3 flex flex-col gap-4">
                 <div className="text-gray-600 dark:text-gray-400 text-sm">
                   代表社員
@@ -139,12 +142,14 @@ export default function Home() {
                   松尾 弥玖人
                 </h3>
                 <h4 className="text-base md:text-lg dark:text-gray-200">
-                  これからも成長するであろう生成AIに「AIアプリケーション開発」という形で投資し続けることで、その可能性を最大限に引き出したいと考えています。
+                  AIの進化が波及していない現場は未だ多くあります
+                  <br />
+                  そこに対する応用の最適解を見つけ、提供していきます
                 </h4>
                 <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                   2019年、大学在籍中に、株式会社Cysharpのインターンを通してOSS開発とゲームエンジン向けツールの開発を経験。同時にフリーランスとして独立し、中小企業のDX支援や社内システムの開発を一手に担う。2022年にトヨクモ株式会社でフルスタックエンジニアとして、大規模な認証基盤の開発に従事。2023年10月からMiletos株式会社のシニアエンジニアとして、大手企業が使う経費精算システムの開発にインフラ・バックエンド・フロントエンド等、様々な方面から携わる。
-                  その経験を活かし、2024年11月に合同会社Instansysを設立。AIの性能が加速度的に向上する中で、その性能に追いつけるAIアプリケーションを開発することを目指している。
-                  教師として小学生にプログラミングを教えたり、声優としてナレーション・CVを担当したりという一面を持っている。
+                  その経験を活かし、2024年11月に合同会社Instansysを設立。AIの性能が加速度的に向上する中で、AIがまだ活用できていないブルーオーシャンの開拓に挑戦していく。
+                  教師として小学生にプログラミングを教えたり、声優学校に通っていたりという一面を持っている
                 </p>
               </div>
               <div className="w-full md:w-1/3 aspect-[4/5] relative">
