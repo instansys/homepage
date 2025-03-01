@@ -11,8 +11,6 @@ import { Section } from "./components/Section";
 export default function Home() {
   return (
     <main className="min-h-screen dark:bg-gray-900">
-      <Header />
-
       {/* ヒーローセクション */}
       <section className="pt-32 md:pt-40 pb-16 md:pb-20 bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
         <div className="container mx-auto px-4 text-center">
@@ -249,17 +247,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
-      {/* フッター */}
-      <footer className="bg-gray-900 text-white py-8 dark:bg-black">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <p className="text-xs md:text-sm">
-              &copy; 2024~ Instansys, Inc. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
