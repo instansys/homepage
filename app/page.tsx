@@ -1,12 +1,12 @@
+import LunaEditorImage from "@/public/luna-editor.png";
 import Image from "next/image";
 import { CiMicrophoneOn } from "react-icons/ci";
-import { GoGear } from "react-icons/go";
 import { FaRegLightbulb } from "react-icons/fa";
+import { GoGear } from "react-icons/go";
 import { MdOutlineAutoMode } from "react-icons/md";
-import { Header } from "./components/Header";
+import { Section } from "./components/Section";
 import { SectionTitle } from "./components/SectionTitle";
 import { ServiceCard } from "./components/ServiceCard";
-import { Section } from "./components/Section";
 
 export default function Home() {
   return (
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="bg-emerald-500 text-white px-6 md:px-8 py-3 rounded-full hover:bg-green-700 transition-colors dark:bg-emerald-600 dark:hover:bg-emerald-700 text-sm md:text-base"
+              className="bg-primary-dark text-white px-6 md:px-8 py-3 rounded-full hover:bg-green-700 transition-colors dark:bg-emerald-600 dark:hover:bg-emerald-700 text-sm md:text-base"
             >
               お問い合わせ
             </a>
@@ -196,37 +196,63 @@ export default function Home() {
       <Section id="products">
         <SectionTitle>自社サービス</SectionTitle>
         <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-8">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-8 flex">
+            <div className="p-8">
+              <Image
+                src={LunaEditorImage}
+                alt="Luna Editor"
+                height={200}
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
             <div className="p-6">
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-3">
-                社内アシスタントbot開発（開発中）
+                Luna Editor
               </h3>
-              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                最新のAI技術を活用した社内アシスタントbotを開発中です。特定の業界や業務に特化したAIソリューションを提供し、お客様のビジネスに新たな価値を創出します。
+              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-loose mb-4">
+                高機能なゲームのシナリオをこれ１つで。
+                <br />
+                あなただけのオーダーメイドエディタ
               </p>
               <div className="text-sm text-gray-500 dark:text-gray-400">
-                2025年内リリース予定
+                現在は法人のお客様向けに開発しています。詳しくはお問い合わせください。
               </div>
             </div>
           </div>
+        </div>
+      </Section>
 
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden mb-8">
-            <div className="p-6">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-3">
-                スマートフォン向けゲーム開発（開発中）
-              </h3>
-              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                スマートフォン向けゲームを企画・開発しています。ユニークな世界観と革新的なゲームプレイを組み合わせた、病みつきになるようなゲームを目指しています。
-              </p>
-              <div className="text-sm text-gray-500 dark:text-gray-400">
-                詳細は近日公開予定
-              </div>
-            </div>
+      {/* ゲーム事業 */}
+      <Section id="games">
+        <SectionTitle>ゲーム事業</SectionTitle>
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+              Instansysでは挑戦事業として、2026年リリース開始を目指し、ゲーム開発を精力的に進めています。
+            </p>
           </div>
 
-          <p className="text-center text-sm md:text-base text-gray-600 dark:text-gray-400 mb-4">
-            自社サービスに関する詳細は随時更新いたします。最新情報をお楽しみに。
-          </p>
+          <div className="text-center">
+            <a
+              href="/games"
+              className="inline-flex font-bold items-center bg-primary-dark text-white px-6 py-3 rounded-full hover:bg-primary-dark transition-colors text-sm md:text-base"
+            >
+              詳しくはこちら
+              <svg
+                className="ml-2 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </Section>
 
