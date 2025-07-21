@@ -90,7 +90,7 @@ const GamesPage = () => {
               imageUrl={UltemistKeyvisual}
               specs={{
                 プラットフォーム: "iOS / Android",
-                ジャンル: "ローププレイング／タワーディフェンス／ハクスラ",
+                ジャンル: "ロールプレイング／タワーディフェンス／ハクスラ",
                 "企画・開発": "合同会社Instansys",
                 発売: "2026年春予定",
                 価格: "基本プレイ無料",
