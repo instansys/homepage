@@ -15,13 +15,15 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <h3 className="text-2xl font-bold text-black mb-1">{title}</h3>
-        <div className="h-[0.2rem] w-[95%] bg-primary" />
+        <h3 className="text-2xl font-bold text-black dark:text-white mb-1">
+          {title}
+        </h3>
+        <div className="h-[0.2rem] w-[95%] bg-primary dark:bg-primary-dark" />
       </div>
-      <div className="bg-white mb-8 flex flex-col md:flex-row gap-4 md:gap-8 md:items-center">
+      <div className="mb-8 flex flex-col md:flex-row gap-4 md:gap-8 md:items-center">
         {/* Game Image */}
         <div className="w-full md:w-1/2 flex-shrink-0">
-          <div className="aspect-[16/9] bg-gray-100 flex items-center justify-center">
+          <div className="aspect-[16/9] flex items-center justify-center">
             {imageUrl ? (
               <Image
                 src={imageUrl}
@@ -29,31 +31,39 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
                 className="w-full h-full object-cover"
               />
             ) : (
-              <div className="text-gray-400 text-sm">画像準備中</div>
+              <div className="text-gray-400 dark:text-gray-300 text-sm">
+                画像準備中
+              </div>
             )}
           </div>
         </div>
 
         {/* Game Info */}
         <div className="w-full md:w-1/2">
-          <h3 className="text-2xl text-black mb-2">{tagline}</h3>
+          <h3 className="text-2xl text-black dark:text-white mb-2">
+            {tagline}
+          </h3>
 
           {/* Specs Table */}
           <div className="mb-6">
             <table className="w-full text-xs">
               <tbody>
                 {Object.entries(specs).map(([key, value]) => (
-                  <tr key={key} className="border-b border-gray-200">
-                    <td className="py-2 text-gray-600 w-24">{key}</td>
-                    <td className="py-2 text-black">{value}</td>
+                  <tr
+                    key={key}
+                    className="border-b border-gray-200 dark:border-gray-600"
+                  >
+                    <td className="py-2 text-gray-600 dark:text-gray-300 w-24">
+                      {key}
+                    </td>
+                    <td className="py-2 text-black dark:text-gray-100">
+                      {value}
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-
-          {/* Copyright */}
-          <p className="text-xs text-gray-400">© Instansys, Inc.</p>
         </div>
       </div>
     </div>
@@ -62,12 +72,12 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
 
 const GamesPage = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Main Content */}
       <div className="pt-24 pb-16">
         <PageTitleSection title="ゲーム事業" />
         <div>
-          <h1 className="px-4 md:px-8 text-lg md:text-xl font-bold text-center">
+          <h1 className="px-4 md:px-8 text-lg md:text-xl font-bold text-center text-black dark:text-white">
             Instansysでは挑戦事業として、2026年リリース開始を目指し、ゲーム開発を精力的に進めています。
           </h1>
         </div>
@@ -88,7 +98,7 @@ const GamesPage = () => {
             />
 
             <GameCard
-              title="月と踊ろう"
+              title="月と踊ろう～Moon Walkers～"
               tagline="人間の少年と吸血鬼の少女の物語を軸にした、夜に悩む人々の群像劇"
               imageUrl={MoonWalkersKeyvisual}
               specs={{
@@ -100,13 +110,6 @@ const GamesPage = () => {
                 価格: "スマートフォン版：基本プレイ無料、PC版：未定",
               }}
             />
-          </div>
-
-          {/* Pagination placeholder */}
-          <div className="flex justify-center mt-12 space-x-2">
-            <div className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center text-sm font-bold">
-              1
-            </div>
           </div>
         </div>
       </div>
