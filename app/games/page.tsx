@@ -18,9 +18,9 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
         <h3 className="text-2xl font-bold text-black mb-1">{title}</h3>
         <div className="h-[0.2rem] w-[95%] bg-primary" />
       </div>
-      <div className="bg-white mb-8 flex gap-8 items-center">
+      <div className="bg-white mb-8 flex flex-col md:flex-row gap-4 md:gap-8 md:items-center">
         {/* Game Image */}
-        <div className="w-1/2 flex-shrink-0">
+        <div className="w-full md:w-1/2 flex-shrink-0">
           <div className="aspect-[16/9] bg-gray-100 flex items-center justify-center">
             {imageUrl ? (
               <Image
@@ -35,7 +35,7 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
         </div>
 
         {/* Game Info */}
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <h3 className="text-2xl text-black mb-2">{tagline}</h3>
 
           {/* Specs Table */}
@@ -67,11 +67,11 @@ const GamesPage = () => {
       <div className="pt-24 pb-16">
         <PageTitleSection title="ゲーム事業" />
         <div>
-          <h1 className="px-8 text-xl font-bold text-center">
+          <h1 className="px-4 md:px-8 text-lg md:text-xl font-bold text-center">
             Instansysでは挑戦事業として、2026年リリース開始を目指し、ゲーム開発を精力的に進めています。
           </h1>
         </div>
-        <div className="max-w-4xl mx-auto px-4 mt-16">
+        <div className="max-w-4xl mx-auto px-4 md:px-8 mt-16">
           {/* Game Cards */}
           <div className="space-y-0">
             <GameCard
