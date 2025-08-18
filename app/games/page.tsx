@@ -1,7 +1,7 @@
 import MoonWalkersKeyvisual from "@/public/moonwalkers-keyvisual.png";
 import UltemistKeyvisual from "@/public/ultemist-keyvisual.png";
 import type { Metadata } from "next";
-import Image, { StaticImageData } from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import PageTitleSection from "../components/PageTitleSection";
 
 interface GameCardProps {
@@ -98,7 +98,7 @@ const GamesPage = () => {
             />
 
             <GameCard
-              title="月と踊ろう～Moon Walkers～"
+              title="月と踊ろう"
               tagline="人間の少年と吸血鬼の少女の物語を軸にした、夜に悩む人々の群像劇"
               imageUrl={MoonWalkersKeyvisual}
               specs={{
