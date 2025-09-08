@@ -1,4 +1,4 @@
-import MoonWalkersKeyvisual from "@/public/moonwalkers-keyvisual.png";
+import MoonWalkersKeyvisual from "@/public/moonwalkers-keyvisual.jpg";
 import UltemistKeyvisual from "@/public/ultemist-keyvisual.png";
 import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
@@ -23,7 +23,7 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
       <div className="mb-8 flex flex-col md:flex-row gap-4 md:gap-8 md:items-center">
         {/* Game Image */}
         <div className="w-full md:w-1/2 flex-shrink-0">
-          <div className="aspect-[16/9] flex items-center justify-center">
+          <div className="max-w-[400px] aspect-[4/3] h-auto flex items-center justify-center">
             {imageUrl ? (
               <Image
                 src={imageUrl}
