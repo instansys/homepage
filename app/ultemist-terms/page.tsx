@@ -228,7 +228,7 @@ const TermsPage = () => (
         />
       </TermSection>
     </div>
-    <div className="mt-20">【2025年3月1日制定】</div>
+    <div className="mt-20">【2026年3月1日制定】</div>
   </div>
 );
 
