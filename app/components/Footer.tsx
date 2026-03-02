@@ -9,6 +9,9 @@ export default function Footer() {
             <Link href="/privacy-policy" className="hover:text-gray-300">
               プライバシーポリシー
             </Link>
+            <Link href="/tokushoho" className="hover:text-gray-300">
+              特定商取引法に基づく表記
+            </Link>
           </div>
           <p className="text-xs md:text-sm">
             &copy; 2024~ Instansys, Inc. All rights reserved.
