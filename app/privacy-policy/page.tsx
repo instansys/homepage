@@ -5,8 +5,8 @@ import { TermSection } from "../components/terms-and-policies/terms/TermSection"
 import { ThirdOrderedList } from "../components/terms-and-policies/terms/ThirdOrderedList";
 
 const PrivacyPolicyPage = () => (
-  <div className="mx-auto max-w-screen-md px-8 pt-32 pb-20">
-    <h1 className="font-bold text-2xl"> プライバシーポリシー</h1>
+  <div className="mx-auto max-w-screen-md px-8 pb-20 pt-32">
+    <h1 className="text-2xl font-bold"> プライバシーポリシー</h1>
     <div className="mt-4">
       合同会社Instansys（以下、「当社」と言います）は、当社の提供するサービス（以下「当社サービス」といいます。）における、ユーザーについての個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
     </div>

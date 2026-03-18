@@ -23,8 +23,7 @@ const rows = [
   },
   {
     label: "商品の名称",
-    value:
-      "表情差分生成サービス、Discord向け議事録作成bot等のデジタルサービス",
+    value: "表情差分生成サービス、Discord向け議事録作成bot等のデジタルサービス",
   },
   {
     label: "販売価格",
@@ -32,8 +31,7 @@ const rows = [
   },
   {
     label: "商品代金以外の必要料金",
-    value:
-      "インターネット接続料金、通信料金等はお客様のご負担となります",
+    value: "インターネット接続料金、通信料金等はお客様のご負担となります",
   },
   {
     label: "支払方法",
@@ -41,8 +39,7 @@ const rows = [
   },
   {
     label: "支払時期",
-    value:
-      "サブスクリプション契約時および各更新日に決済されます",
+    value: "サブスクリプション契約時および各更新日に決済されます",
   },
   {
     label: "サービスの提供時期",
@@ -66,8 +63,8 @@ const rows = [
 ];
 
 const TokushohoPage = () => (
-  <div className="mx-auto max-w-screen-md px-8 pt-32 pb-20">
-    <h1 className="font-bold text-2xl">特定商取引法に基づく表記</h1>
+  <div className="mx-auto max-w-screen-md px-8 pb-20 pt-32">
+    <h1 className="text-2xl font-bold">特定商取引法に基づく表記</h1>
     <div className="mt-8">
       <table className="w-full border-collapse">
         <tbody>
@@ -76,14 +73,14 @@ const TokushohoPage = () => (
               key={row.label}
               className="border-b border-gray-200 dark:border-gray-700"
             >
-              <th className="py-4 pr-4 text-left align-top font-bold text-sm md:text-base w-1/3 dark:text-white">
+              <th className="w-1/3 py-4 pr-4 text-left align-top text-sm font-bold md:text-base dark:text-white">
                 {row.label}
               </th>
-              <td className="py-4 text-sm md:text-base text-gray-600 dark:text-gray-400">
+              <td className="py-4 text-sm text-gray-600 md:text-base dark:text-gray-400">
                 {"href" in row && row.href ? (
                   <a
                     href={row.href}
-                    className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 hover:underline break-all"
+                    className="break-all text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
                     {...(row.href.startsWith("http")
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
@@ -105,8 +102,7 @@ const TokushohoPage = () => (
 
 export const metadata: Metadata = {
   title: "特定商取引法に基づく表記",
-  description:
-    "合同会社Instansysの特定商取引法に基づく表記です。",
+  description: "合同会社Instansysの特定商取引法に基づく表記です。",
 };
 
 export default TokushohoPage;

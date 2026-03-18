@@ -7,8 +7,8 @@ import { ThirdOrderedList } from "../components/terms-and-policies/terms/ThirdOr
 import type { Metadata } from "next";
 
 const TermsPage = () => (
-  <div className="mx-auto max-w-screen-md px-8 pt-32 pb-20">
-    <h1 className="font-bold text-2xl">利用規約</h1>
+  <div className="mx-auto max-w-screen-md px-8 pb-20 pt-32">
+    <h1 className="text-2xl font-bold">利用規約</h1>
     <div className="mt-4">
       本利用規約（以下「本規約」と言います。）には、合同会社Instansys（以下「当社」と言います）が提供する「進撃のアルテミスト」という名前のサービス(以下「本サービス」と言います)の提供条件及び当社と登録ユーザーの皆様との間の権利義務関係が定められています。本サービスの利用に際しては、本規約の全文をお読みいただいたうえで、本規約に同意いただく必要があります。
     </div>

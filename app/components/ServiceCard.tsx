@@ -12,14 +12,14 @@ export const ServiceCard = ({
   description,
 }: ServiceCardProps) => {
   return (
-    <div className="bg-white dark:bg-gray-900 p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-      <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
-        <Icon size={20} className="dark:text-blue-300 md:text-2xl" />
+    <div className="rounded-lg bg-white p-4 shadow-lg transition-shadow hover:shadow-xl md:p-6 dark:bg-gray-900">
+      <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 md:h-12 md:w-12 dark:bg-blue-900">
+        <Icon size={20} className="md:text-2xl dark:text-blue-300" />
       </div>
-      <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 dark:text-white">
+      <h3 className="mb-2 text-lg font-bold md:mb-3 md:text-xl dark:text-white">
         {title}
       </h3>
-      <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+      <p className="text-sm leading-relaxed text-gray-600 md:text-base dark:text-gray-400">
         {description}
       </p>
     </div>
