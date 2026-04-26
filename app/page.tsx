@@ -1,13 +1,9 @@
 import LunaEditorImage from "@/public/luna-editor.png";
 import Image from "next/image";
-import { CiMicrophoneOn } from "react-icons/ci";
-import { FaRegLightbulb } from "react-icons/fa";
-import { GoGear } from "react-icons/go";
-import { MdOutlineAutoMode } from "react-icons/md";
 import { Section } from "./components/Section";
 import { SectionTitle } from "./components/SectionTitle";
-import { ServiceCard } from "./components/ServiceCard";
 import { GradientLinkButton } from "./components/atoms/GradientLinkButton";
+import { ServicesSection } from "./components/services-section";
 
 export default function Home() {
   return (
@@ -203,32 +199,14 @@ export default function Home() {
       {/* サービス */}
       <Section id="services">
         <SectionTitle>サービス</SectionTitle>
-        <div className="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
-          <ServiceCard
-            icon={GoGear}
-            title="システム開発"
-            description="お客様のニーズに合わせ、最適なお値段で最適なシステムを要件定義からメンテナンスまで開発担当いたします。"
-          />
-          <ServiceCard
-            icon={FaRegLightbulb}
-            title="ITコンサルティング"
-            description="技術選定から運用まで、幅広くサポートいたします。"
-          />
-          <ServiceCard
-            icon={MdOutlineAutoMode}
-            title="DX支援"
-            description="デジタル化による業務効率化をサポートします。"
-          />
-          <ServiceCard
-            icon={CiMicrophoneOn}
-            title="CV・ナレーション"
-            description="代表者 松尾 弥玖人がナレーションやCVを担当いたします。"
-          />
-        </div>
+        <ServicesSection />
       </Section>
 
       {/* 自社サービス */}
-      <Section id="products">
+      <Section
+        id="products"
+        className="bg-[url('/top-services/luna-editor-background.jpg')] bg-cover bg-center bg-no-repeat"
+      >
         <SectionTitle>自社サービス</SectionTitle>
         <div className="mx-auto max-w-4xl px-4">
           <div className="mb-8 flex overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-800">
