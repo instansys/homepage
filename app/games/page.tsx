@@ -9,9 +9,16 @@ interface GameCardProps {
   tagline: string;
   imageUrl?: StaticImageData;
   specs: Record<string, string>;
+  officialSiteUrl?: string;
 }
 
-const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
+const GameCard = ({
+  title,
+  tagline,
+  imageUrl,
+  specs,
+  officialSiteUrl,
+}: GameCardProps) => {
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -64,6 +71,30 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
               </tbody>
             </table>
           </div>
+
+          {officialSiteUrl && (
+            <a
+              href={officialSiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex font-bold items-center bg-primary-dark text-white px-6 py-3 rounded-full hover:bg-primary-dark transition-colors text-sm md:text-base"
+            >
+              公式サイトはこちら
+              <svg
+                className="ml-2 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          )}
         </div>
       </div>
     </div>
@@ -99,15 +130,17 @@ const GamesPage = () => {
 
             <GameCard
               title="月と踊ろう"
-              tagline="人間の少年と吸血鬼の少女の物語を軸にした、夜に悩む人々の群像劇"
+              tagline="さみしさに寄り添う群像劇ビジュアルノベル"
               imageUrl={MoonWalkersKeyvisual}
+              officialSiteUrl="https://dance-with-the-moon.com"
               specs={{
-                プラットフォーム: "iOS / Android / PC・macOS(Steam)",
+                プラットフォーム: "iOS / Android / Steam(Windows)",
                 ジャンル: "ビジュアルノベル",
-                "原作・ディレクション": "遊木さく",
-                開発: "合同会社Instansys／ハミングウェイ",
-                発売: "2026年四半期予定",
-                価格: "スマートフォン版：基本プレイ無料、PC版：未定",
+                "企画・シナリオ・ディレクション": "遊木さく",
+                開発: "ハミングウェイ",
+                販売: "合同会社Instansys",
+                発売: "2027年予定",
+                価格: "未定",
               }}
             />
           </div>
