@@ -1,5 +1,5 @@
 import MoonWalkersKeyvisual from "@/public/moonwalkers-keyvisual.jpg";
-import UltemistKeyvisual from "@/public/ultemist-keyvisual.png";
+import UltemistKeyvisual from "@/public/ultemist-keyvisual.jpg";
 import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import PageTitleSection from "../components/PageTitleSection";
@@ -8,6 +8,7 @@ interface GameCardProps {
   title: string;
   tagline: string;
   imageUrl?: StaticImageData;
+  imageAspect?: "4/3" | "16/9";
   specs: Record<string, string>;
   officialSiteUrl?: string;
 }
@@ -16,6 +17,7 @@ const GameCard = ({
   title,
   tagline,
   imageUrl,
+  imageAspect = "4/3",
   specs,
   officialSiteUrl,
 }: GameCardProps) => {
@@ -30,7 +32,11 @@ const GameCard = ({
       <div className="mb-8 flex flex-col md:flex-row gap-4 md:gap-8 md:items-center">
         {/* Game Image */}
         <div className="w-full md:w-1/2 flex-shrink-0">
-          <div className="max-w-[400px] aspect-[4/3] h-auto flex items-center justify-center">
+          <div
+            className={`max-w-[400px] h-auto flex items-center justify-center ${
+              imageAspect === "16/9" ? "aspect-[16/9]" : "aspect-[4/3]"
+            }`}
+          >
             {imageUrl ? (
               <Image
                 src={imageUrl}
@@ -124,6 +130,7 @@ const GamesPage = () => {
               title="聖痕のアルテミスト"
               tagline="攻撃力9999の主人公が、スライムに負けます"
               imageUrl={UltemistKeyvisual}
+              imageAspect="16/9"
               officialSiteUrl="https://ultemist.jp"
               specs={{
                 プラットフォーム: "iOS / Android",
