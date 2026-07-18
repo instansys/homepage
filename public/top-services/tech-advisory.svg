@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="ITコンサルティング・技術顧問">
+  <defs>
+    <linearGradient id="bg-adv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7EC5CF"/>
+      <stop offset="1" stop-color="#3BA5B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-adv)"/>
+  <circle cx="316" cy="196" r="18" fill="#FFFFFF" opacity="0.16"/>
+  <circle cx="90" cy="220" r="14" fill="#FFFFFF" opacity="0.16"/>
+  <!-- 吹き出し -->
+  <path d="M120 78 h160 a16 16 0 0 1 16 16 v82 a16 16 0 0 1 -16 16 h-118 l-26 28 v-28 h-16 a16 16 0 0 1 -16 -16 v-82 a16 16 0 0 1 16 -16 z" fill="#FFFFFF"/>
+  <!-- 電球 -->
+  <g stroke="#F5B961" stroke-width="6" stroke-linecap="round">
+    <line x1="158" y1="96" x2="158" y2="90"/>
+    <line x1="132" y1="106" x2="128" y2="101"/>
+    <line x1="184" y1="106" x2="188" y2="101"/>
+  </g>
+  <circle cx="158" cy="128" r="22" fill="#F5B961"/>
+  <rect x="149" y="151" width="18" height="8" rx="3" fill="#175E6B"/>
+  <rect x="152" y="162" width="12" height="6" rx="3" fill="#175E6B"/>
+  <!-- 上向きのグラフ -->
+  <rect x="214" y="146" width="16" height="24" rx="3" fill="#7EC5CF"/>
+  <rect x="238" y="132" width="16" height="38" rx="3" fill="#3BA5B5"/>
+  <rect x="262" y="116" width="16" height="54" rx="3" fill="#175E6B"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="AIを活用したシステム開発">
+  <defs>
+    <linearGradient id="bg-ai-hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7EC5CF"/>
+      <stop offset="1" stop-color="#3BA5B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-ai-hero)"/>
+  <circle cx="700" cy="90" r="48" fill="#FFFFFF" opacity="0.14"/>
+  <circle cx="110" cy="500" r="34" fill="#FFFFFF" opacity="0.14"/>
+  <circle cx="740" cy="480" r="24" fill="#FFFFFF" opacity="0.14"/>
+  <!-- コードウィンドウ -->
+  <rect x="330" y="140" width="340" height="260" rx="20" fill="#FFFFFF"/>
+  <path d="M330 160 a20 20 0 0 1 20 -20 h300 a20 20 0 0 1 20 20 v32 h-340 z" fill="#175E6B"/>
+  <circle cx="356" cy="166" r="9" fill="#F5B961"/>
+  <circle cx="382" cy="166" r="9" fill="#7EC5CF"/>
+  <circle cx="408" cy="166" r="9" fill="#FFFFFF" opacity="0.55"/>
+  <rect x="365" y="220" width="120" height="16" rx="8" fill="#3BA5B5"/>
+  <rect x="365" y="252" width="200" height="16" rx="8" fill="#BFE2E7"/>
+  <rect x="395" y="284" width="150" height="16" rx="8" fill="#F5B961"/>
+  <rect x="365" y="316" width="100" height="16" rx="8" fill="#BFE2E7"/>
+  <rect x="395" y="348" width="170" height="16" rx="8" fill="#3BA5B5"/>
+  <!-- AIチップ -->
+  <g stroke="#BFE2E7" stroke-width="6" stroke-linecap="round">
+    <line x1="185" y1="280" x2="145" y2="280"/>
+    <line x1="185" y1="325" x2="145" y2="325"/>
+    <line x1="185" y1="370" x2="145" y2="370"/>
+    <line x1="225" y1="250" x2="225" y2="214"/>
+    <line x1="295" y1="250" x2="295" y2="214"/>
+    <line x1="225" y1="400" x2="225" y2="436"/>
+    <line x1="295" y1="400" x2="295" y2="436"/>
+  </g>
+  <g fill="#BFE2E7">
+    <circle cx="136" cy="280" r="8"/>
+    <circle cx="136" cy="325" r="8"/>
+    <circle cx="136" cy="370" r="8"/>
+    <circle cx="225" cy="205" r="8"/>
+    <circle cx="295" cy="205" r="8"/>
+    <circle cx="225" cy="445" r="8"/>
+    <circle cx="295" cy="445" r="8"/>
+  </g>
+  <rect x="185" y="250" width="150" height="150" rx="24" fill="#175E6B"/>
+  <rect x="203" y="268" width="114" height="114" rx="16" fill="none" stroke="#3BA5B5" stroke-width="3" opacity="0.7"/>
+  <text x="260" y="348" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="bold" font-style="italic" fill="#FFFFFF">AI</text>
+  <!-- ストップウォッチ -->
+  <g transform="translate(640 430)">
+    <rect x="-12" y="-74" width="24" height="18" rx="6" fill="#F5B961"/>
+    <circle r="52" fill="#F5B961"/>
+    <circle r="38" fill="#FFFFFF"/>
+    <g stroke="#7EC5CF" stroke-width="5" stroke-linecap="round">
+      <line x1="0" y1="-32" x2="0" y2="-24"/>
+      <line x1="32" y1="0" x2="24" y2="0"/>
+      <line x1="0" y1="32" x2="0" y2="24"/>
+      <line x1="-32" y1="0" x2="-24" y2="0"/>
+    </g>
+    <line x1="0" y1="0" x2="18" y2="-18" stroke="#175E6B" stroke-width="7" stroke-linecap="round"/>
+    <circle r="6" fill="#175E6B"/>
+  </g>
+  <!-- きらめき -->
+  <path d="M0 -20 C3.1 -6.2 6.2 -3.1 20 0 C6.2 3.1 3.1 6.2 0 20 C-3.1 6.2 -6.2 3.1 -20 0 C-6.2 -3.1 -3.1 -6.2 0 -20 Z" transform="translate(305 105)" fill="#F5B961"/>
+  <path d="M0 -13 C2 -4.1 4.1 -2 13 0 C4.1 2 2 4.1 0 13 C-2 4.1 -4.1 2 -13 0 C-4.1 -2 -2 -4.1 0 -13 Z" transform="translate(150 170)" fill="#FFFFFF"/>
+  <path d="M0 -13 C2 -4.1 4.1 -2 13 0 C4.1 2 2 4.1 0 13 C-2 4.1 -4.1 2 -13 0 C-4.1 -2 -2 -4.1 0 -13 Z" transform="translate(716 250)" fill="#FFFFFF"/>
+</svg>
