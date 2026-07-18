@@ -1,5 +1,5 @@
 import MoonWalkersKeyvisual from "@/public/moonwalkers-keyvisual.jpg";
-import UltemistKeyvisual from "@/public/ultemist-keyvisual.png";
+import UltemistKeyvisual from "@/public/ultemist-keyvisual.jpg";
 import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import PageTitleSection from "../components/PageTitleSection";
@@ -8,10 +8,19 @@ interface GameCardProps {
   title: string;
   tagline: string;
   imageUrl?: StaticImageData;
+  imageAspect?: "4/3" | "16/9";
   specs: Record<string, string>;
+  officialSiteUrl?: string;
 }
 
-const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
+const GameCard = ({
+  title,
+  tagline,
+  imageUrl,
+  imageAspect = "4/3",
+  specs,
+  officialSiteUrl,
+}: GameCardProps) => {
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -23,7 +32,11 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
       <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:gap-8">
         {/* Game Image */}
         <div className="w-full flex-shrink-0 md:w-1/2">
-          <div className="flex aspect-[4/3] h-auto max-w-[400px] items-center justify-center">
+          <div
+            className={`flex h-auto max-w-[400px] items-center justify-center ${
+              imageAspect === "16/9" ? "aspect-[16/9]" : "aspect-[4/3]"
+            }`}
+          >
             {imageUrl ? (
               <Image
                 src={imageUrl}
@@ -64,6 +77,35 @@ const GameCard = ({ title, tagline, imageUrl, specs }: GameCardProps) => {
               </tbody>
             </table>
           </div>
+
+          {officialSiteUrl && (
+            <div className="border-t border-gray-200 pt-3 dark:border-gray-600">
+              <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500">
+                Official Site
+              </p>
+              <a
+                href={officialSiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1.5 font-mono text-sm font-bold text-primary-dark underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-dark sm:text-base dark:text-primary dark:focus-visible:outline-primary"
+              >
+                {officialSiteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                <svg
+                  className="h-3.5 w-3.5 transition-transform duration-150 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 17L17 7M17 7H8M17 7V16"
+                  />
+                </svg>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -86,28 +128,32 @@ const GamesPage = () => {
           <div className="space-y-0">
             <GameCard
               title="聖痕のアルテミスト"
-              tagline="繰り返して強くなる！運命を変える新感覚タワーディフェンスRPG"
+              tagline="攻撃力9999の主人公が、スライムに負けます"
               imageUrl={UltemistKeyvisual}
+              imageAspect="16/9"
+              officialSiteUrl="https://ultemist.jp"
               specs={{
                 プラットフォーム: "iOS / Android",
-                ジャンル: "ロールプレイング／タワーディフェンス／ハクスラ",
+                ジャンル: "ローグライトタワーディフェンスRPG／ハクスラ",
                 "企画・開発": "合同会社Instansys",
-                発売: "2026年春予定",
+                発売: "2026年冬予定",
                 価格: "基本プレイ無料",
               }}
             />
 
             <GameCard
               title="月と踊ろう"
-              tagline="人間の少年と吸血鬼の少女の物語を軸にした、夜に悩む人々の群像劇"
+              tagline="さみしさに寄り添う群像劇ビジュアルノベル"
               imageUrl={MoonWalkersKeyvisual}
+              officialSiteUrl="https://dance-with-the-moon.com"
               specs={{
-                プラットフォーム: "iOS / Android / PC・macOS(Steam)",
+                プラットフォーム: "iOS / Android / Steam(Windows)",
                 ジャンル: "ビジュアルノベル",
-                "原作・ディレクション": "遊木さく",
-                開発: "合同会社Instansys／ハミングウェイ",
-                発売: "2026年四半期予定",
-                価格: "スマートフォン版：基本プレイ無料、PC版：未定",
+                "企画・シナリオ・ディレクション": "遊木さく",
+                開発: "ハミングウェイ（モバイル版は合同会社Instansysと共同開発）",
+                販売: "合同会社Instansys",
+                発売: "2027年予定",
+                価格: "未定",
               }}
             />
           </div>
