@@ -70,8 +70,8 @@ export default function Home() {
             {/* Left: Image */}
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
               <Image
-                src="/top-ai-bg.jpg"
-                alt="AI"
+                src="/top-ai-illustration.svg"
+                alt="AIを活用したシステム開発"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
