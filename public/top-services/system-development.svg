@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="受託システム開発">
+  <defs>
+    <linearGradient id="bg-dev" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7EC5CF"/>
+      <stop offset="1" stop-color="#3BA5B5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-dev)"/>
+  <circle cx="322" cy="74" r="24" fill="#FFFFFF" opacity="0.16"/>
+  <circle cx="84" cy="224" r="16" fill="#FFFFFF" opacity="0.16"/>
+  <!-- ブラウザウィンドウ -->
+  <rect x="103" y="72" width="190" height="142" rx="14" fill="#FFFFFF"/>
+  <path d="M103 86 a14 14 0 0 1 14 -14 h162 a14 14 0 0 1 14 14 v22 h-190 z" fill="#175E6B"/>
+  <circle cx="123" cy="90" r="5" fill="#F5B961"/>
+  <circle cx="140" cy="90" r="5" fill="#7EC5CF"/>
+  <circle cx="157" cy="90" r="5" fill="#FFFFFF" opacity="0.55"/>
+  <!-- コード行 -->
+  <rect x="122" y="126" width="66" height="10" rx="5" fill="#3BA5B5"/>
+  <rect x="122" y="146" width="112" height="10" rx="5" fill="#BFE2E7"/>
+  <rect x="142" y="166" width="84" height="10" rx="5" fill="#F5B961"/>
+  <rect x="122" y="186" width="58" height="10" rx="5" fill="#BFE2E7"/>
+  <!-- 歯車 -->
+  <g transform="translate(283 204)">
+    <g fill="#F5B961">
+      <rect x="-7" y="-36" width="14" height="72" rx="5"/>
+      <rect x="-7" y="-36" width="14" height="72" rx="5" transform="rotate(45)"/>
+      <rect x="-7" y="-36" width="14" height="72" rx="5" transform="rotate(90)"/>
+      <rect x="-7" y="-36" width="14" height="72" rx="5" transform="rotate(135)"/>
+    </g>
+    <circle r="25" fill="#F5B961"/>
+    <circle r="11" fill="#FFFFFF"/>
+  </g>
+</svg>

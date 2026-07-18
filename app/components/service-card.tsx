@@ -15,7 +15,7 @@ export function ServiceCard({
 }: ServiceCardProps) {
   return (
     <article className="row-span-4 grid grid-rows-subgrid gap-0">
-      <h3 className="font-[family-name:var(--font-oswald)] text-3xl font-medium italic tracking-wide text-[#3BA5B5]">
+      <h3 className="font-[family-name:var(--font-oswald)] text-3xl font-medium italic tracking-wide text-[#3BA5B5] md:text-2xl lg:text-3xl">
         {englishTitle}
       </h3>
       <h4 className="mt-1 font-bold text-foreground">{japaneseTitle}</h4>
