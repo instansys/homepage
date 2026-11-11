@@ -14,7 +14,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-xs md:text-sm">
-            &copy; 2024~ Instansys, Inc. All rights reserved.
+            &copy; 2024~ Instansys LLC. All rights reserved.
           </p>
         </div>
       </div>
