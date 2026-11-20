@@ -1,4 +1,3 @@
-import MoonWalkersKeyvisual from "@/public/moonwalkers-keyvisual.jpg";
 import UltemistKeyvisual from "@/public/ultemist-keyvisual.jpg";
 import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
@@ -138,22 +137,6 @@ const GamesPage = () => {
                 "企画・開発": "合同会社Instansys",
                 発売: "2026年12月15日配信予定",
                 価格: "基本プレイ無料",
-              }}
-            />
-
-            <GameCard
-              title="月と踊ろう"
-              tagline="さみしさに寄り添う群像劇ビジュアルノベル"
-              imageUrl={MoonWalkersKeyvisual}
-              officialSiteUrl="https://dance-with-the-moon.com"
-              specs={{
-                プラットフォーム: "iOS / Android / Steam(Windows)",
-                ジャンル: "ビジュアルノベル",
-                "企画・シナリオ・ディレクション": "遊木さく",
-                開発: "ハミングウェイ（モバイル版は合同会社Instansysと共同開発）",
-                販売: "合同会社Instansys",
-                発売: "2027年予定",
-                価格: "未定",
               }}
             />
           </div>
